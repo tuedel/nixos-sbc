@@ -245,6 +245,12 @@
 
       XFRM_USER = module;
       NFT_XFRM = module;
+
+      WIREGUARD = module;
+      TUN = module;
+      TAP = module;
+      MACVTAP = module;
+      IPVTAP = module;
     };
 
     argsOverride = rec {
