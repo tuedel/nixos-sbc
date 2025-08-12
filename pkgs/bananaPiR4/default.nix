@@ -247,16 +247,17 @@
       NFT_XFRM = module;
     };
 
-    argsOverride = {
+    argsOverride = rec {
       src = fetchFromGitHub {
         owner = "frank-w";
         repo = "BPI-Router-Linux";
         # 6.12-main HEAD 2025-04-11
-        rev = "d814d01a79010a26c1bdf5bee4827779e3c5a148";
-        hash = "sha256-KHMXDQ3AohOFbKNMRhPhracT9Hxm2lVi8QyNaiDnrlE=";
+        rev = "ca19509eb10fe7ae7194ace65ffd4b2e039a5bbf";
+        hash = "sha256-tHnf/6rA89BKoWUunzaKh7+wJ1G58Pe6ueRHhZ1YSe0=";
       };
-      version = "6.12.23-bpi-r4";
-      modDirVersion = "6.12.23-bpi-r4";
+      version = "6.12.41-bpi-r4";
+      modDirVersion = version;
+      #modDirVersion = "6.12.41-bpi-r4";
     };
 
     defconfig = "mt7988a_bpi-r4_defconfig";
